@@ -98,8 +98,6 @@ p {
     object-fit: cover;
 }
 
-.sitenav {}
-
 .sitenav-list {
     display: flex;
     list-style: none;
@@ -149,6 +147,10 @@ p {
 .hero-text {
     font-style: italic;
     font-family: "Sour Gummy";
+}
+
+.features {
+    padding-top: 100px;
 }
 
 

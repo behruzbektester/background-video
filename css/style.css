@@ -150,6 +150,10 @@ p {
   font-family: "Sour Gummy";
 }
 
+.features {
+  padding-top: 100px;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 15px;
