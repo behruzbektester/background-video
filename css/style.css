@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Sour Gummy";
 }
 
 body {
@@ -10,6 +11,16 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul,
+ol {
+  list-style: none;
 }
 
 .container {
@@ -31,7 +42,9 @@ body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
 
-h1 {
+h1,
+h2,
+h3 {
   font-size: 50px;
 }
 
@@ -151,7 +164,17 @@ p {
 }
 
 .features {
+  color: gray;
   padding-top: 100px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/night-nature.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 100px;
+}
+.features__text {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 /* width */
@@ -174,4 +197,70 @@ p {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #333;
+}
+
+.innerlist {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  transition: 0.3s;
+}
+.innerlist__inner-list {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transition: 1s;
+}
+
+.sitenav-item:hover .innerlist {
+  padding-top: 10px;
+  visibility: visible;
+  opacity: 1;
+}
+
+.inner-item-link:hover {
+  color: tomato;
+}
+
+.inner-item:hover .innerlist__inner-list {
+  visibility: visible;
+  opacity: 1;
+  padding-top: 5px;
+  background-color: #fff;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.phone-number {
+  color: black;
+}
+.phone-number:hover {
+  color: tomato;
+}
+
+.innerlist__inner-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.innerlist__inner-list__item:hover {
+  color: tomato;
+  cursor: pointer;
+}
+
+.about {
+  color: black;
+}
+.about:hover {
+  color: tomato;
 }/*# sourceMappingURL=style.css.map */
